@@ -40,7 +40,7 @@ win32 {
     RC_FILE = app_icon.rc
 }
 
-unix {
+!mac: unix {
     TARGET = qgit
     target.path = $$[QT_INSTALL_BINS]
     CONFIG += x11
